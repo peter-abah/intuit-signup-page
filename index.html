@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/main.css">
   <title>Intuit Signup Form</title>
 </head>
 
@@ -18,14 +20,14 @@
     </a>
   </div>
 
-  <header>
+  <header class="header">
     <img class="logo" src="images/intuit_logo.jpg" alt="Intuit Logo">
   </header>
 
   <form action="/" method="post" class="sign-up-form">
-    <hgroup>
+    <hgroup class="form-heading">
       <h1>Create an Intuit account</h1>
-      <h2>One account for everything Intuit, including Mint. <a href="#">Learn more</a></h2>
+      <h2 class="subheading">One account for everything Intuit, including Mint. <a href="#">Learn more</a></h2>
     </hgroup>
 
     <div class="field">
@@ -36,7 +38,7 @@
     <div class="field">
       <label for="phone">Phone (recommended)</label>
       <input type="tel" name="phone" class="text-field">
-      <small>We strongly recommend adding a phone number. 
+      <small class="recommend">We strongly recommend adding a phone number. 
       This will help verify your account and keep it safe</small>
     </div>
 
@@ -49,7 +51,7 @@
       <span class="material-icons-outlined">lock</span> Create Account
     </button>
 
-    <small>
+    <small class="terms">
       By selecting Create Account, you agree to our <a href="#">Terms</a> and have read 
       and acknowledge our <a href="">Global Privacy Statement.</a>
     </small>

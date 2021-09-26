@@ -1,0 +1,129 @@
+/* General */
+
+body {
+  background-color: #eceef1;
+  font-family: Arial, sans-serif;
+  line-height: 1.1rem;
+  box-sizing: border-box;
+}
+
+small {
+  display: block;
+  font-size: .75rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+.sign-in {
+  display: none;
+}
+
+.header {
+  margin: 1.25rem auto 1rem;
+}
+
+.logo {
+  display: block;
+  width: 18rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+/*  Sign up form */
+.sign-up-form {
+  padding: 1.875rem;
+  background-color: #fff;
+  border: 1px solid #c7c7c7;
+}
+
+.form-heading {
+  font-size: 1.5rem;
+  color: #393A3D;
+  text-align: center;
+}
+
+.subheading {
+  margin: 1.25rem 0;
+  font-weight: 200;
+  font-size: .875rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 1.5rem;
+}
+
+.field label {
+  padding-bottom: .5rem;
+  font-size: .875rem;
+  color: #404040;
+}
+
+.text-field {
+  height: 2rem;
+  padding: 0 .5rem;
+  border: 1px solid #C1C5C8;
+}
+
+.text-field:focus, .text-field:focus-visible {
+  border: 1px solid #52A8EC;
+  outline: none;
+}
+
+.recommend {
+  margin: 5px auto;
+  color: #ea7f00;
+}
+
+.submit-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2.5rem;
+  width: 100%;
+  margin-bottom: 1rem;
+
+  font-size: 1rem;
+  border: none;
+  background-color: #0077C5;
+  color: #fff;
+}
+
+.terms {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+
+/* Footer */
+footer {
+  padding: 1rem;
+  font-size: .75rem;
+  color: #505050;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: center;
+  margin-bottom: .5rem;
+}
+
+.footer-links li {
+  margin: 0 .5rem;
+}
+
+.footer-links a {
+  color: #505050;
+}
+
+.copyright {
+  text-align: center;
+}
