@@ -2,4 +2,4 @@
 
 This is a clone of [Intuit sign up page](https://accounts.intuit.com/signup.html) done with HTML and CSS
 
-You can view it live [here](link)
+You can view it live [here](https://peter-abah.github.io/intuit-signup-page/)
