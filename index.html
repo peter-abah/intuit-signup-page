@@ -6,6 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"     rel="stylesheet">
+
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/main.css">
   <title>Intuit Signup Form</title>
@@ -13,8 +19,10 @@
 
 <body>
   <div class="sign-in">
-    <p>Already have an Intuit account?</p>
-    <a href="#">I forgot my User ID or Password</a>
+    <p class="sign-in-text">
+      <span>Already have an Intuit account?</span>
+      <a href="#">I forgot my User ID or Password</a>
+    </p>
     <a href="#" class="sign-in-link">
       <span class="material-icons-outlined">lock</span> Sign in
     </a>
@@ -24,42 +32,46 @@
     <img class="logo" src="images/intuit_logo.jpg" alt="Intuit Logo">
   </header>
 
-  <form action="/" method="post" class="sign-up-form">
-    <hgroup class="form-heading">
-      <h1>Create an Intuit account</h1>
-      <h2 class="subheading">One account for everything Intuit, including Mint. <a href="#">Learn more</a></h2>
-    </hgroup>
+  <div class="wrapper">
+    <form action="/" method="post" class="sign-up-form">
+      <hgroup class="form-heading">
+        <h1>Create an Intuit account</h1>
+        <h2 class="subheading">One account for everything Intuit, including Mint. <a href="#">Learn more</a></h2>
+      </hgroup>
 
-    <div class="field">
-      <label for="email">Email</label>
-      <input type="email" class="text-field">
+      <div class="field">
+        <label for="email">Email</label>
+        <input type="email" class="text-field">
+      </div>
+
+      <div class="field">
+        <label for="phone">Phone (recommended)</label>
+        <input type="tel" name="phone" class="text-field">
+        <small class="recommend">We strongly recommend adding a phone number. 
+        This will help verify your account and keep it safe</small>
+      </div>
+
+      <div class="field">
+        <label for="password">Password</label>
+        <input type="password" name="password" class="text-field">
+      </div>
+
+      <button type="submit" class="submit-button">
+        <span class="material-icons-outlined">lock</span> Create Account
+      </button>
+
+      <small class="terms">
+        By selecting Create Account, you agree to our <a href="#">Terms</a> and have read 
+        and acknowledge our <a href="">Global Privacy Statement.</a>
+      </small>
+    </form>
+
+    <div class="recaptcha">
+      <small>
+        Invisible reCAPTCHA by Google <a href="">Privacy Policy</a> and <a href="">Terms of Use.</a>
+      </small>
     </div>
-
-    <div class="field">
-      <label for="phone">Phone (recommended)</label>
-      <input type="tel" name="phone" class="text-field">
-      <small class="recommend">We strongly recommend adding a phone number. 
-      This will help verify your account and keep it safe</small>
-    </div>
-
-    <div class="field">
-      <label for="password">Password</label>
-      <input type="password" name="password" class="text-field">
-    </div>
-
-    <button type="submit" class="submit-button">
-      <span class="material-icons-outlined">lock</span> Create Account
-    </button>
-
-    <small class="terms">
-      By selecting Create Account, you agree to our <a href="#">Terms</a> and have read 
-      and acknowledge our <a href="">Global Privacy Statement.</a>
-    </small>
-
-    <small>
-      Invisible reCAPTCHA by Google <a href="">Privacy Policy</a> and <a href="">Terms of Use.</a>
-    </small>
-  </form>
+  </div>
 
   <footer>
     <ul class="footer-links">
@@ -69,7 +81,7 @@
     </ul>
 
     <small class="copyright">
-      2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, 
+      &copy; 2021 Intuit, Inc. All rights reserved. Intuit, QuickBooks, QB, 
       TurboTax, ProConnect and Mint are registered trademarks of Intuit Inc.
       Terms and conditions, features, support, pricing, and service options 
       subject to change without notice.
